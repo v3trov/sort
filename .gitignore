@@ -1,0 +1,16 @@
+\.idea/
+.pyc
+*.log
+__pycache__/
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
