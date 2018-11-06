@@ -4,8 +4,16 @@
 def bubleSort(unsortedlist):
     """
     Сортировка списка "пузырьком"
-    :param unsortedlist:
-    :return: sortedlist
+
+    Args:
+        unsortedlist (list): Неотсортированный список
+
+    Returns:
+        sortedlist (list): Отсортированный список
+
+    Raises:
+        TypeError: Если переден НЕ список
+        ValueError: Если вместо списка None или количество элементов в списке <= 0
     """
 
     if type(unsortedlist) is not list:
@@ -15,7 +23,7 @@ def bubleSort(unsortedlist):
         raise ValueError("Список = None")
 
     if len(unsortedlist) <= 0:
-        raise ValueError("Количество элементов должны быть > 0")
+        raise ValueError("Количество элементов должно быть > 0")
 
     for passnum in range(len(unsortedlist)-1, 0, -1):
         for i in range(passnum):

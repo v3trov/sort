@@ -4,20 +4,22 @@ import random
 def generateintlist():
     """
     Создание тестового списка из рандомных целых чисел
-    :return: testlist
+
+    :return: testlistint
     """
-    testlist = []
+    testlistint = []
     for i in range(100):
-        testlist.append(random.randint(-10000, 10000))
-    return testlist
+        testlistint.append(random.randint(-10000, 10000))
+    return testlistint
 
 
 def generatefloatlist():
     """
     Создание тестового списка из рандомных чисел с точкой
-    :return: testlist
+
+    :return: testlistfloat
     """
-    testlist = []
+    testlistfloat = []
     for i in range(100):
-        testlist.append(random.randint(-10000, 10000)/11)
-    return testlist
+        testlistfloat.append(random.randint(-10000, 10000)/11)
+    return testlistfloat
